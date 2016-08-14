@@ -1,0 +1,23 @@
+{
+  "name": "tula",
+  "description": "a Sails application",
+  "main": "app.js",
+  "authors": [
+    "shankar"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/nodealpha/honny_healthcare",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-ui-router": "^0.3.1",
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0"
+  }
+}

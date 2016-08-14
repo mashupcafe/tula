@@ -1,2 +1,3 @@
 # tula
-Tula health center
+
+a [Sails](http://sailsjs.org) application

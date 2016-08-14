@@ -1,0 +1,4 @@
+<ul class="list-group">
+  <li class="list-group-item" ng-show="payload.length === 0">{{ defaultMsg }}</li>
+  <li class="list-group-item" ng-repeat="list in payload">{{ list.firstName }}</li>
+</ul>
