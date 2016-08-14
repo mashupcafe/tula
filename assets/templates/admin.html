@@ -1,0 +1,50 @@
+<div class="" ng-controller="AdminController">
+  <!-- navigation -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+         <ul class="nav navbar-nav">
+           <li ng-repeat="tab in TABS" class="text-capitalize"><a href="#" ng-click="setTab($event, tab)">{{tab}}</a></li>
+         </ul>
+       </div>
+    </div>
+  </nav>
+
+  <!-- staff -->
+  <div  ng-if="$state.params.tab === TABS.STAFFS">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary">Add Staff</button>
+    </div>
+    <div class="app-list">
+      <list payload="list" default-msg="No Staffs found"></list>
+    </div>
+  </div>
+
+  <!-- clinics -->
+  <div  ng-if="$state.params.tab === TABS.CLINICS">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary">Add Clinic</button>
+    </div>
+    <div class="app-list">
+      <list payload="list" default-msg="No Staffs found"></list>
+    </div>
+  </div>
+
+  <!-- doctors -->
+  <div  ng-if="$state.params.tab === TABS.DOCTORS">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary">Add Doctors</button>
+    </div>
+    <div class="app-list">
+      <list payload="list" default-msg="No Staffs found"></list>
+    </div>
+  </div>
+
+  <!-- patients -->
+  <div  ng-if="$state.params.tab === TABS.PATIENTS">
+    <div class="app-list">
+      <list payload="list" default-msg="No Staffs found"></list>
+    </div>
+  </div>
+
+</div>
